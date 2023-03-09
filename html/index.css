@@ -1,0 +1,223 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline;}
+body {line-height:1;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:”; content:none;}
+a {margin:0; padding:0; font-size:100%; vertical-align:baseline;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom:1px dotted;cursor:help;}
+table {border-collapse:collapse;border-spacing:0;}
+input, select {vertical-align:middle;}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/* Desktop */
+header{
+	width: 100%;
+}
+.container{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.logo{
+	height: 100%;
+	width: 50px;
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0px;
+	border-bottom: 1px solid black;
+}
+.menu-item{
+	border: solid black;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+.hero-title{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    row-gap: 40px;
+}
+.hero-title>h1{
+    font-size: 50px;
+    font-weight: 700px;
+}
+.hero-title>h6{
+	font-size: 20px;
+}
+.about{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+.about-contact{
+    gap: 40px;
+    justify-content: center;
+}
+.about-img{
+	height: 500px;
+    width: 100%;
+}
+.content-caption{
+	color: gray;
+	margin-bottom: 20px;
+}
+.content-person{
+	display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.content-person>img{
+	border-radius: 50%;
+}
+.person-profile{
+	width: 60px;
+	height: 60px;
+}
+.person-info{
+	display: flex;
+	flex-direction: column;
+}
+.person-info>p{
+	color: gray;
+	font-style: italic;
+	margin-top: 10px;
+}
+.border{
+	border: 1px solid;
+	color: gray;
+    width: 100px;
+}
+.contact{
+	width: 32%;
+}
+.about-information{
+	width: 70%;
+}
+.information-title{
+	font-size: 20px;
+	color: black;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+.information-list{
+	display: flex;
+	flex-direction: column;
+    gap: 20px;
+}
+.information-list>li{
+	display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.list-number{
+	background-color: gray;
+    color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.list-content{
+	font-size: 17px;
+	width: 58%;
+}
+
+.card{
+	display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px;
+    background-color: beige;
+}
+.card-title>h4{
+	font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.form{
+	display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input-type{
+	border: 2px solid #e5e2e2;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 15px;
+}
+.input-menu{
+	color : black;
+	font-size: 15px;
+}
+.button{
+	background-color: black;
+    color: white;
+    height: 40px;
+    border-radius: 4px;
+}
+.bottom{
+	display: flex;
+    margin: 20px;
+    font-size: 15px;
+    justify-content: center;
+    background-color: black;
+    color: beige;
+}
+.footer-border{
+	width: 80% auto;
+    display: flex;
+    padding: 10px 65px;
+    background: beige;
+    font-size: 12px;
+}
+
+@media (min-width: 360px) and (max-width: 768px){
+	.about-contact{
+		display: blocks;
+		width: 100%;
+	}
+	.about{
+		width: 100%;
+	}
+	.contact{
+		width: 80%;
+		display: block;
+		margin: auto;
+		padding: auto;
+	}
+	.navbar img{
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 1200px){
+	.about-contact{
+		display: flex;
+		gap: 40px;
+    	justify-content: center;
+	}
+}
